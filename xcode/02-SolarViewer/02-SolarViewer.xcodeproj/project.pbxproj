@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DAF52B012705D68002B243A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52AB12705D68002B243A /* main.cpp */; };
+		7DAF52B112705D68002B243A /* SolarViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52AE12705D68002B243A /* SolarViewer.cpp */; };
+		7DAF52D412706035002B243A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAF52D312706035002B243A /* GLUT.framework */; };
+		7DAF52D612706035002B243A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAF52D512706035002B243A /* OpenGL.framework */; };
+		7DAF52F1127060AD002B243A /* fbo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52E2127060AD002B243A /* fbo.cpp */; };
+		7DAF52F2127060AD002B243A /* GlutViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52E5127060AD002B243A /* GlutViewer.cpp */; };
+		7DAF52F3127060AD002B243A /* Mesh3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52E8127060AD002B243A /* Mesh3D.cpp */; };
+		7DAF52F4127060AD002B243A /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52EB127060AD002B243A /* shader.cpp */; };
+		7DAF52F5127060AD002B243A /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52ED127060AD002B243A /* texture.cpp */; };
+		7DAF52F6127060AD002B243A /* TrackballViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAF52EF127060AD002B243A /* TrackballViewer.cpp */; };
+		8DD76F6A0486A84900D96B5E /* 02-SolarViewer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* 02-SolarViewer.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* 02-SolarViewer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7DAF52AB12705D68002B243A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../src/exercises/02-SolarViewer/main.cpp"; sourceTree = SOURCE_ROOT; };
+		7DAF52AC12705D68002B243A /* phong.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = phong.fs; path = "../../src/exercises/02-SolarViewer/phong.fs"; sourceTree = SOURCE_ROOT; };
+		7DAF52AD12705D68002B243A /* phong.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = phong.vs; path = "../../src/exercises/02-SolarViewer/phong.vs"; sourceTree = SOURCE_ROOT; };
+		7DAF52AE12705D68002B243A /* SolarViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SolarViewer.cpp; path = "../../src/exercises/02-SolarViewer/SolarViewer.cpp"; sourceTree = SOURCE_ROOT; };
+		7DAF52AF12705D68002B243A /* SolarViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SolarViewer.h; path = "../../src/exercises/02-SolarViewer/SolarViewer.h"; sourceTree = SOURCE_ROOT; };
+		7DAF52D312706035002B243A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		7DAF52D512706035002B243A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		7DAF52E1127060AD002B243A /* Camera3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera3D.h; path = ../../src/gl/Camera3D.h; sourceTree = SOURCE_ROOT; };
+		7DAF52E2127060AD002B243A /* fbo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fbo.cpp; path = ../../src/gl/fbo.cpp; sourceTree = SOURCE_ROOT; };
+		7DAF52E3127060AD002B243A /* fbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fbo.h; path = ../../src/gl/fbo.h; sourceTree = SOURCE_ROOT; };
+		7DAF52E4127060AD002B243A /* gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gl.h; path = ../../src/gl/gl.h; sourceTree = SOURCE_ROOT; };
+		7DAF52E5127060AD002B243A /* GlutViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GlutViewer.cpp; path = ../../src/gl/GlutViewer.cpp; sourceTree = SOURCE_ROOT; };
+		7DAF52E6127060AD002B243A /* GlutViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlutViewer.h; path = ../../src/gl/GlutViewer.h; sourceTree = SOURCE_ROOT; };
+		7DAF52E7127060AD002B243A /* Light3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Light3D.h; path = ../../src/gl/Light3D.h; sourceTree = SOURCE_ROOT; };
+		7DAF52E8127060AD002B243A /* Mesh3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mesh3D.cpp; path = ../../src/gl/Mesh3D.cpp; sourceTree = SOURCE_ROOT; };
+		7DAF52E9127060AD002B243A /* Mesh3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mesh3D.h; path = ../../src/gl/Mesh3D.h; sourceTree = SOURCE_ROOT; };
+		7DAF52EA127060AD002B243A /* Object3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object3D.h; path = ../../src/gl/Object3D.h; sourceTree = SOURCE_ROOT; };
+		7DAF52EB127060AD002B243A /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../src/gl/shader.cpp; sourceTree = SOURCE_ROOT; };
+		7DAF52EC127060AD002B243A /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader.h; path = ../../src/gl/shader.h; sourceTree = SOURCE_ROOT; };
+		7DAF52ED127060AD002B243A /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../src/gl/texture.cpp; sourceTree = SOURCE_ROOT; };
+		7DAF52EE127060AD002B243A /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = ../../src/gl/texture.h; sourceTree = SOURCE_ROOT; };
+		7DAF52EF127060AD002B243A /* TrackballViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrackballViewer.cpp; path = ../../src/gl/TrackballViewer.cpp; sourceTree = SOURCE_ROOT; };
+		7DAF52F0127060AD002B243A /* TrackballViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackballViewer.h; path = ../../src/gl/TrackballViewer.h; sourceTree = SOURCE_ROOT; };
+		7DAF52F7127060BB002B243A /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix4.h; path = ../../src/math/Matrix4.h; sourceTree = SOURCE_ROOT; };
+		7DAF52F8127060BB002B243A /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2.h; path = ../../src/math/Vector2.h; sourceTree = SOURCE_ROOT; };
+		7DAF52F9127060BB002B243A /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = ../../src/math/Vector3.h; sourceTree = SOURCE_ROOT; };
+		7DAF52FA127060BB002B243A /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector4.h; path = ../../src/math/Vector4.h; sourceTree = SOURCE_ROOT; };
+		7DAF52FB127060C7002B243A /* Mesh3DReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mesh3DReader.h; path = ../../src/utils/Mesh3DReader.h; sourceTree = SOURCE_ROOT; };
+		7DAF52FC127060C7002B243A /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StopWatch.h; path = ../../src/utils/StopWatch.h; sourceTree = SOURCE_ROOT; };
+		7DAF57BA1270DDA0002B243A /* diffuse.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = diffuse.fs; path = "../../src/exercises/02-SolarViewer/diffuse.fs"; sourceTree = SOURCE_ROOT; };
+		7DAF57BB1270DDA0002B243A /* diffuse.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = diffuse.vs; path = "../../src/exercises/02-SolarViewer/diffuse.vs"; sourceTree = SOURCE_ROOT; };
+		8DD76F6C0486A84900D96B5E /* 02-SolarViewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-SolarViewer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* 02-SolarViewer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "02-SolarViewer.1"; sourceTree = "<group>"; };
+		FF5DE9A412718AC300C0C693 /* tex.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tex.fs; path = "../../src/exercises/02-SolarViewer/tex.fs"; sourceTree = SOURCE_ROOT; };
+		FF5DE9A512718ADF00C0C693 /* tex.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tex.vs; path = "../../src/exercises/02-SolarViewer/tex.vs"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAF52D412706035002B243A /* GLUT.framework in Frameworks */,
+				7DAF52D612706035002B243A /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* 02-SolarViewer */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				7DAF52D312706035002B243A /* GLUT.framework */,
+				7DAF52D512706035002B243A /* OpenGL.framework */,
+			);
+			name = "02-SolarViewer";
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF52E012706098002B243A /* utils */,
+				7DAF52DF12706092002B243A /* math */,
+				7DAF52DE1270608D002B243A /* gl */,
+				7DAF52DB12706062002B243A /* src */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* 02-SolarViewer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DAF52DB12706062002B243A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF52DC12706068002B243A /* exercises */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		7DAF52DC12706068002B243A /* exercises */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF52DD12706070002B243A /* 02-SolarViewer */,
+			);
+			name = exercises;
+			sourceTree = "<group>";
+		};
+		7DAF52DD12706070002B243A /* 02-SolarViewer */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF57BA1270DDA0002B243A /* diffuse.fs */,
+				7DAF57BB1270DDA0002B243A /* diffuse.vs */,
+				7DAF52AF12705D68002B243A /* SolarViewer.h */,
+				7DAF52AE12705D68002B243A /* SolarViewer.cpp */,
+				7DAF52AD12705D68002B243A /* phong.vs */,
+				7DAF52AC12705D68002B243A /* phong.fs */,
+				7DAF52AB12705D68002B243A /* main.cpp */,
+				FF5DE9A412718AC300C0C693 /* tex.fs */,
+				FF5DE9A512718ADF00C0C693 /* tex.vs */,
+			);
+			name = "02-SolarViewer";
+			sourceTree = "<group>";
+		};
+		7DAF52DE1270608D002B243A /* gl */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF52E1127060AD002B243A /* Camera3D.h */,
+				7DAF52E2127060AD002B243A /* fbo.cpp */,
+				7DAF52E3127060AD002B243A /* fbo.h */,
+				7DAF52E4127060AD002B243A /* gl.h */,
+				7DAF52E5127060AD002B243A /* GlutViewer.cpp */,
+				7DAF52E6127060AD002B243A /* GlutViewer.h */,
+				7DAF52E7127060AD002B243A /* Light3D.h */,
+				7DAF52E8127060AD002B243A /* Mesh3D.cpp */,
+				7DAF52E9127060AD002B243A /* Mesh3D.h */,
+				7DAF52EA127060AD002B243A /* Object3D.h */,
+				7DAF52EB127060AD002B243A /* shader.cpp */,
+				7DAF52EC127060AD002B243A /* shader.h */,
+				7DAF52ED127060AD002B243A /* texture.cpp */,
+				7DAF52EE127060AD002B243A /* texture.h */,
+				7DAF52EF127060AD002B243A /* TrackballViewer.cpp */,
+				7DAF52F0127060AD002B243A /* TrackballViewer.h */,
+			);
+			name = gl;
+			sourceTree = "<group>";
+		};
+		7DAF52DF12706092002B243A /* math */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF52F7127060BB002B243A /* Matrix4.h */,
+				7DAF52F8127060BB002B243A /* Vector2.h */,
+				7DAF52F9127060BB002B243A /* Vector3.h */,
+				7DAF52FA127060BB002B243A /* Vector4.h */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
+		7DAF52E012706098002B243A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7DAF52FB127060C7002B243A /* Mesh3DReader.h */,
+				7DAF52FC127060C7002B243A /* StopWatch.h */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* 02-SolarViewer.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* 02-SolarViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "02-SolarViewer" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-SolarViewer";
+			productInstallPath = "$(HOME)/bin";
+			productName = "02-SolarViewer";
+			productReference = 8DD76F6C0486A84900D96B5E /* 02-SolarViewer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "02-SolarViewer" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* 02-SolarViewer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* 02-SolarViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAF52B012705D68002B243A /* main.cpp in Sources */,
+				7DAF52B112705D68002B243A /* SolarViewer.cpp in Sources */,
+				7DAF52F1127060AD002B243A /* fbo.cpp in Sources */,
+				7DAF52F2127060AD002B243A /* GlutViewer.cpp in Sources */,
+				7DAF52F3127060AD002B243A /* Mesh3D.cpp in Sources */,
+				7DAF52F4127060AD002B243A /* shader.cpp in Sources */,
+				7DAF52F5127060AD002B243A /* texture.cpp in Sources */,
+				7DAF52F6127060AD002B243A /* TrackballViewer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "02-SolarViewer";
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "02-SolarViewer";
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "02-SolarViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "02-SolarViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

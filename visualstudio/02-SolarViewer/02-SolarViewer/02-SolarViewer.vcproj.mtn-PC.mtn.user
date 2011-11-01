@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioUserFile
+	ProjectType="Visual C++"
+	Version="8,00"
+	ShowAllFiles="false"
+	>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			>
+			<DebugSettings
+				Command="$(TargetPath)"
+				WorkingDirectory="$(SolutionDir)\..\..\src\exercises\02-SolarViewer"
+				CommandArguments="&quot;$(SolutionDir)\..\..\data\stars\stars.obj&quot; &quot;$(SolutionDir)\..\..\data\sun\sun.obj&quot; &quot;$(SolutionDir)\..\..\data\earth\earth.obj&quot; &quot;$(SolutionDir)\..\..\data\moon\moon.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\mercury.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\venus.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\mars.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\jupiter.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\saturn.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\uranus.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\neptune.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\pluto.obj&quot;"
+				Attach="false"
+				DebuggerType="3"
+				Remote="1"
+				RemoteMachine="MTN-PC"
+				RemoteCommand=""
+				HttpUrl=""
+				PDBPath=""
+				SQLDebugging=""
+				Environment="PATH=%PATH%;$(SolutionDir)\..\libs"
+				EnvironmentMerge="true"
+				DebuggerFlavor="0"
+				MPIRunCommand=""
+				MPIRunArguments=""
+				MPIRunWorkingDirectory=""
+				ApplicationCommand=""
+				ApplicationArguments=""
+				ShimCommand=""
+				MPIAcceptMode=""
+				MPIAcceptFilter=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			>
+			<DebugSettings
+				Command="$(TargetPath)"
+				WorkingDirectory="$(SolutionDir)\..\..\src\exercises\02-SolarViewer"
+				CommandArguments="&quot;$(SolutionDir)\..\..\data\stars\stars.obj&quot; &quot;$(SolutionDir)\..\..\data\sun\sun.obj&quot; &quot;$(SolutionDir)\..\..\data\earth\earth.obj&quot; &quot;$(SolutionDir)\..\..\data\moon\moon.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\mercury.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\venus.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\mars.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\jupiter.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\saturn.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\uranus.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\neptune.obj&quot; &quot;$(SolutionDir)\..\..\data\planets\pluto.obj&quot;"
+				Attach="false"
+				DebuggerType="3"
+				Remote="1"
+				RemoteMachine="MTN-PC"
+				RemoteCommand=""
+				HttpUrl=""
+				PDBPath=""
+				SQLDebugging=""
+				Environment="PATH=%PATH%;$(SolutionDir)\..\libs"
+				EnvironmentMerge="true"
+				DebuggerFlavor="0"
+				MPIRunCommand=""
+				MPIRunArguments=""
+				MPIRunWorkingDirectory=""
+				ApplicationCommand=""
+				ApplicationArguments=""
+				ShimCommand=""
+				MPIAcceptMode=""
+				MPIAcceptFilter=""
+			/>
+		</Configuration>
+	</Configurations>
+</VisualStudioUserFile>
