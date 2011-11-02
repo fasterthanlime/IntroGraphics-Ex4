@@ -300,9 +300,18 @@ void SolarViewer::idle()
 		totalDaysElapsed += daysElapsed;
 		
 		//Exercise 4.3 Rotate the earth and the moon
-		m_Earth.rotateObject(Vector3(0,1,0),2*M_PI*daysElapsed);
-		m_Moon.rotateAroundAxisWorld(m_Earth.origin(),Vector3(0,1,0),0.2127*daysElapsed);
-		m_Earth.rotateAroundAxisWorld(m_Sun.origin(),Vector3(0,1,0),0.0172*daysElapsed);//0.0172
+		Vector3 up(0, 1, 0);
+		
+		const float SUN_SELF_PERIOD = 24.47;
+		const float EARTH_SELF_PERIOD = 1.0;
+		const float EARTH_AROUND_SUN_PERIOD = 365.0;
+		const float MOON_AROUND_EARTH = 29.53;
+		
+		m_Sun.  rotateObject(up, daysElapsed / SUN_SELF_PERIOD * 2 * M_PI);		
+		m_Earth.rotateObject(up, daysElapsed / EARTH_SELF_PERIOD * 2 * M_PI);
+		m_Earth.rotateAroundAxisWorld(m_Sun.origin(), up, daysElapsed / EARTH_AROUND_SUN_PERIOD * 2 * M_PI);
+		m_Moon. rotateAroundAxisWorld(m_Sun.origin(), up, daysElapsed / EARTH_AROUND_SUN_PERIOD * 2 * M_PI);
+		m_Moon. rotateAroundAxisWorld(m_Earth.origin(), up, daysElapsed / MOON_AROUND_EARTH * 2 * M_PI);
 		
 		//Exercise 4.6: Rotate the planets
 
