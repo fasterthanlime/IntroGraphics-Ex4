@@ -12,12 +12,13 @@ void main()
 	//Exercise 4.4: Calculate the reflected intensities for the direct sun light (using lightDir and lightcolor) 
 	//and indirect light (using indirectLightDir and indirectlightcolor)
 		
-	vec3 color = diffuseColor;
+	vec3 color = lightcolor * diffuseColor * dot(normal,lightDir);
 	vec3 indcolor = diffuseColor;
 	vec4 finalcolor = vec4(color, 1.0) + vec4(indcolor, 1.0);
 	
-
-	gl_FragColor = finalcolor;	
+	gl_FragColor = texture2D(texture, gl_TexCoord[0].xy) * finalcolor;
+	
+	
 	
 	// need this line so OpenGL doesn't optimize out the variables -- remove in your solution
 	useTexture; texture; indirectlightcolor; specularExp;
