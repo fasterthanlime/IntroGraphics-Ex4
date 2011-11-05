@@ -19,7 +19,7 @@ void main()
 	
 	//Exercise 4.4: Calculate direct and indirect light directions
 	lightDir = normalize( lightposition - vertex );
-	
+	indirectLightDir = normalize(indirectlightposition - vertex);
 
 	// get texture coordinate
 	gl_TexCoord[0]  = gl_MultiTexCoord0;

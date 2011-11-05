@@ -12,8 +12,8 @@ void main()
 	//Exercise 4.4: Calculate the reflected intensities for the direct sun light (using lightDir and lightcolor) 
 	//and indirect light (using indirectLightDir and indirectlightcolor)
 		
-	vec3 color = lightcolor * diffuseColor * dot(normal,lightDir);
-	vec3 indcolor = diffuseColor;
+	vec3 color = lightcolor * diffuseColor * dot(normal,lightDir)*useTexture;
+	vec3 indcolor = indirectlightcolor * diffuseColor * dot(normal,indirectLightDir)*useTexture;
 	vec4 finalcolor = vec4(color, 1.0) + vec4(indcolor, 1.0);
 	
 	gl_FragColor = texture2D(texture, gl_TexCoord[0].xy) * finalcolor;
