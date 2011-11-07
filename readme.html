@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 4 - Introduction to computer graphics</title>
+    <style>
+        body {
+            background-color: #101010;
+            color: #F0F0F0;
+            font-family: Helvetica;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+
+        h1 {
+            background-color: #F0F0F0;
+            color: #101010;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 1.5em;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        img {
+            box-shadow: 0px 0px 15px white;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Introduction to computer graphics</h1>
+<p>
+by Javier Martín de Valmaseda and Amos Wenger 
+</p>
+<h2>4.1 Introduction</h2>
+
+<p>We found it odd that we had to add all these models as command-line arguments. Couldn't the program just load them if we gave it the models folder?</p>
+
+<p>We used both XCode and Visual C++ to develop the code, so we made sure it works in both.</p>
+
+<h2>4.2 Scale and Translations (2 points)</h2>
+
+<p>We used scaleObject and translateWorld to set up the solar system in a plausible manner, according to the values given to us.</p>
+
+<h2>4.3 Rotations (8 points)</h2>
+
+<p>Rotations were a bit tricky - we used constants for readability of the code. The sun is easy because it only rotates about itself, the sun rotates about itself and the sun, and as for the moon, it's applied the same rotation than the earth around the sun, plus its own rotation about itself.</p>
+
+<p>At first we didn't apply the rotation of the earth around the sun to the moon, and that's why it looked wrong (the moon was penetrating the earth)</p>
+
+<h2>4.4 Lighting and Textures (10 points)</h2>
+
+<p></p>
+
+<h2>4.5 Geocentric model (5 points)</h2>
+
+<p></p>
+
+<h2>4.6 Other planets (5 points)</h2>
+
+<p></p>
+
+</body>
+</html>
+
