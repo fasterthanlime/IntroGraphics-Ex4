@@ -24,7 +24,7 @@ void main()
         
         vec4 finalcolor = vec4(color, 1.0) + vec4(indcolor, 1.0);
 
-        if (useTexture == 1) {
+        if (useTexture == 0) {
           gl_FragColor = finalcolor;
 	} else {
           gl_FragColor = texture2D(texture, gl_TexCoord[0].xy) * finalcolor;

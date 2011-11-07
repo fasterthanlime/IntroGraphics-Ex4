@@ -304,7 +304,7 @@ void SolarViewer::idle()
 		Vector3 up(0, 1, 0);
 		
 		const float SUN_SELF_PERIOD = 24.47;
-		const float EARTH_SELF_PERIOD = 365.0;
+		const float EARTH_SELF_PERIOD = 1.0;
 		const float EARTH_AROUND_SUN_PERIOD = 365.0;
 		const float MOON_AROUND_EARTH = 29.53;
 		
