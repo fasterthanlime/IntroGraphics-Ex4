@@ -304,7 +304,7 @@ void SolarViewer::idle()
 		Vector3 up(0, 1, 0);
 		
 		const float SUN_SELF_PERIOD = 24.47;
-		const float EARTH_SELF_PERIOD = 1.0;
+		const float EARTH_SELF_PERIOD = 365.0;
 		const float EARTH_AROUND_SUN_PERIOD = 365.0;
 		const float MOON_AROUND_EARTH = 29.53;
 		
@@ -382,14 +382,14 @@ draw_scene(DrawMode _draw_mode)
 	
 	//Exercise 4.4: Setup the indirect lighting
 	//calculate the light position and intensity from the moon to the earth
-	float moonLightIntensity = 0.0;
+	float moonLightIntensity = 0.0f;
 	//cos (V,W) = V*W / |V| * |W|
 	Vector3 moonSun = (m_Sun.origin() - m_Moon.origin()).normalize();
 	Vector3 moonEarth = (m_Earth.origin() - m_Moon.origin()).normalize();
 	float cosAngleM = moonSun.dot(moonEarth) / moonSun.length() * moonEarth.length();
 	float angleRadM = acos(cosAngleM);
 	//float angle = angleRadM*180/M_PI;
-	moonLightIntensity = abs(sin(angleRadM)/2) * m_recSunlightInt; 
+	moonLightIntensity = fabs(sin(angleRadM)/2.0f) * m_recSunlightInt; 
 	
 	Vector3 moonLightPosInCamera = m_camera.getTransformation().Inverse()*m_Moon.origin();
 	
@@ -398,14 +398,14 @@ draw_scene(DrawMode _draw_mode)
 	//printf("light : %f \n", abs(sin(angleRad)/2));
 	
 	//calculate the light position and intensity from the earth to the moon
-	float earthLightIntensity = 0.0;
+	float earthLightIntensity = 0.0f;
 	//cos (V,W) = V*W / |V| * |W|
 	Vector3 earthSun = (m_Sun.origin() - m_Earth.origin()).normalize();
 	Vector3 earthMoon = (m_Moon.origin() - m_Earth.origin()).normalize();
 	float cosAngleE = earthSun.dot(earthMoon) / earthSun.length() * earthMoon.length();
 	float angleRadE = acos(cosAngleE);
 	
-	earthLightIntensity = abs(sin(angleRadE)/2) * m_recSunlightInt; 
+	earthLightIntensity = fabs(sin(angleRadE)/2.0f) * m_recSunlightInt; 
 
 	Vector3 earthLightPosInCamera = m_camera.getTransformation().Inverse()*m_Earth.origin();
 	
