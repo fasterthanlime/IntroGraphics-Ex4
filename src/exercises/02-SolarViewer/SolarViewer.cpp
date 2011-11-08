@@ -202,6 +202,8 @@ load_mesh(const std::string& filenameObj, MeshType type)
 				m_Planets[index].calculateVertexNormals();
 			
 			//Exercise 4.6: Scale and translate the planets
+			m_Planets[index].scaleObject(Vector3(m_PlanetsScale[index],m_PlanetsScale[index],m_PlanetsScale[index]));
+			m_Planets[index].translateWorld(m_PlanetsTranslate[index]);
 			break;
 		}
 		default:
@@ -315,6 +317,8 @@ void SolarViewer::idle()
 		m_Moon. rotateAroundAxisWorld(m_Earth.origin(), up, daysElapsed / MOON_AROUND_EARTH * 2 * M_PI);
 		
 		//Exercise 4.6: Rotate the planets
+		for(int i=0;i<8;i++)
+			m_Planets[i].rotateAroundAxisWorld(m_Sun.origin(), up, daysElapsed / m_PlanetsYear[i] * 2 * M_PI);
 
 		glutPostRedisplay();
 	}
