@@ -63,13 +63,16 @@ by Javier Martín de Valmaseda and Amos Wenger
 <p>With a simple translation we have moved the light to center of the sun and with matrix multiplication we have calculated the light position in camera coordinates.</p>
 
 <p>After that we have setup the indirect light. The slides have been very practical. </p>
+
 <p>We get the angle between the vectors (moonEarth and moonSun) and then with the half of the sin(angle) multiplied by m_recSunlightInt we have the moonLightIntensity. It's the same for the earth but with their respective vectors.</p>
+
 <p>We have used the sinus for this calculation because of, as the slides say, when the angle is 90º or 270º the intensity should be 50/100 and when is 0º or 180º the intensity should be 0/100.</p>
-<p> In order to finish we need to make the light and indirectlight calculations in the shader. We have used the slides formula (I = Ip * kd * (N· L)) and the available variables to make it work.
+
+<p>In order to finish we need to make the light and indirectlight calculations in the shader. We have used the slides formula (I = Ip * kd * (N· L)) and the available variables to make it work.</p>
 
 <h2>4.5 Geocentric model (5 points)</h2>
 
-<p></p>
+<p>That one was easy, we just had to translate the camera using sunToEarthVector at the beginning of draw_scene, and translate it of -sunToEarthVector at the end. We tried set_scene_pos in the beginning, which kinda worked but didn't allow rotation and zooming of the camera using the mouse.</p>
 
 <h2>4.6 Other planets (5 points)</h2>
 
