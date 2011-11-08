@@ -293,6 +293,11 @@ special(int key, int x, int y)
 
 //-----------------------------------------------------------------------------
 
+const float SUN_SELF_PERIOD = 24.47;
+const float EARTH_SELF_PERIOD = 1.0;
+const float EARTH_AROUND_SUN_PERIOD = 365.0;
+const float MOON_AROUND_EARTH = 29.53;
+
 void SolarViewer::idle()
 {
 	if(isWatchOn)
@@ -304,11 +309,6 @@ void SolarViewer::idle()
 		
 		//Exercise 4.3 Rotate the earth and the moon
 		Vector3 up(0, 1, 0);
-		
-		const float SUN_SELF_PERIOD = 24.47;
-		const float EARTH_SELF_PERIOD = 1.0;
-		const float EARTH_AROUND_SUN_PERIOD = 365.0;
-		const float MOON_AROUND_EARTH = 29.53;
 		
 		m_Sun.  rotateObject(up, daysElapsed / SUN_SELF_PERIOD * 2 * M_PI);		
 		m_Earth.rotateObject(up, daysElapsed / EARTH_SELF_PERIOD * 2 * M_PI);
@@ -331,11 +331,13 @@ SolarViewer::
 draw_scene(DrawMode _draw_mode)
 {
 	Vector3 sunToEarthVector = m_Earth.origin() - m_Sun.origin();
+	float earthAngle = totalDaysElapsed / EARTH_SELF_PERIOD * 2 * M_PI;
 	
 	//Exercise 4.5: Transform the camera so that the earth becomes the center of rotation
 	if(m_geocentric)
 	{	
 		m_camera.translateWorld(sunToEarthVector);
+		m_camera.rotateAroundAxisWorld(m_Earth.origin(), Vector3(0, 1, 0), earthAngle);
 	}
 	
 	// clear screen
@@ -444,6 +446,7 @@ draw_scene(DrawMode _draw_mode)
 	//Exercise 4.5: Transform the camera back to its original position
 	if(m_geocentric) 
 	{
+		m_camera.rotateAroundAxisWorld(m_Earth.origin(), Vector3(0, 1, 0), -earthAngle);
 		m_camera.translateWorld(-sunToEarthVector);
 	}
 }
